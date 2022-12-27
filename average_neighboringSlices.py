@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# Please refer to the Villa lab slack for descriptions and usage.
 # By Digvijay Singh (digvijay.in1@gmail.com)
 import sys
 import os
