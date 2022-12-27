@@ -1,5 +1,5 @@
 # Introduction
-A collection of scripts that I use to help process my cryo-electron tomography data.  I am starting this repository with only a handful of scripts; I will continue to add more. Most of these are Wrapper scripts that rely on other programs and scripts
+A collection of scripts that I use to help process my cryo-electron tomography data.  I am starting this repository with only a handful of scripts; I will continue to add more. Most of these are wrapper scripts that rely on other programs and scripts
 
 # How to use
 The description for the usage of each script can be found in its commented header or with the -h flag when running them (if Python script). An incomplete list of description for each script is the following:
