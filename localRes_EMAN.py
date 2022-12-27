@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# By Digvijay Singh (digvijay.in1@gmail.com)
+# By Digvijay Singh (digvijay.in1 at gmail.com)
 import os
 import sys
 import getopt
 import argparse
 import subprocess
 from EMAN2 import *
-parser=argparse.ArgumentParser(description='''Will calculate local resolution between two half maps using the input box size using EMAN2's e2fsc_real_local.py''', epilog="""For questions, contact at digvijay.in1@gmail.com.""")
+parser=argparse.ArgumentParser(description='''Will calculate local resolution between two half maps using the input box size using EMAN2's e2fsc_real_local.py''', epilog="""For questions, contact at digvijay.in1 at gmail.com.""")
 
 #Optional arguments
 #parser.add_argument('-o', '--output', help='Output file name', default='stdout')

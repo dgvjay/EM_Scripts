@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# By Digvijay Singh (digvijay.in1@gmail.com)
+# By Digvijay Singh (digvijay.in1 at gmail.com)
 import sys
 from glob import glob
 import glob, os
@@ -9,7 +9,7 @@ import argparse
 
 
 # THE MAIN SCRIPT STARTS from here
-parser=argparse.ArgumentParser(description='''Will batch convert all Relion3.0 star file in the input directory (input in -d with / at end) using Alister Burt's dynamo2m function, so warp2dynamo should be in your path''', epilog="""For questions, contact at digvijay.in1@gmail.com.""")
+parser=argparse.ArgumentParser(description='''Will batch convert all Relion3.0 star file in the input directory (input in -d with / at end) using Alister Burt's dynamo2m function, so warp2dynamo should be in your path''', epilog="""For questions, contact at digvijay.in1 at gmail.com.""")
 
 requiredNamed = parser.add_argument_group('Required arguments')
 requiredNamed.add_argument('-b', '--box_size', help='Box size in .tbl files', required=True)

@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# By Digvijay Singh (digvijay.in1@gmail.com)
+# By Digvijay Singh (digvijay.in1 at gmail.com)
 import sys
 from glob import glob
 import glob, os
@@ -10,7 +10,7 @@ import getopt
 import argparse
 
 # THE MAIN SCRIPT STARTS from here
-parser=argparse.ArgumentParser(description='''Will batch read all Relion 3.0 style star files into the input directory (input with -d with \ at end) using Alister Burt's starfile into panda dataframes and combine them all to a combined star file''', epilog="""For questions, contact at digvijay.in1@gmail.com.""")
+parser=argparse.ArgumentParser(description='''Will batch read all Relion 3.0 style star files into the input directory (input with -d with \ at end) using Alister Burt's starfile into panda dataframes and combine them all to a combined star file''', epilog="""For questions, contact at digvijay.in1 at gmail.com.""")
 
 requiredNamed = parser.add_argument_group('Required arguments')
 requiredNamed.add_argument('-c', '--combined_star', help='Name of the output starfile combining all other star files', required=True)

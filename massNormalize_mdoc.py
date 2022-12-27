@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# By Digvijay Singh (digvijay.in1@gmail.com)
+# By Digvijay Singh (digvijay.in1 at gmail.com)
 # Run it in the directory containing .mdocs, it will create a new sub-directory called Adjusted_mdoc with adjusted mdoc files with the same name.
 import re,sys
 import glob, os
@@ -58,7 +58,7 @@ def adjust_mdoc(mdoc_file):
 
 
 # THE MAIN SCRIPT STARTS from here
-parser=argparse.ArgumentParser(description='''Will nornalize (i.e. offset by PreTilt Zero angle) tilt angles in all mdocs in the input folder (input with -d with a slash at end) and generate a new folder called Adjusted containing new mdocs with normalized tilt angles. which can then be directly used in WARP & other software''', epilog="""For questions, contact at digvijay.in1@gmail.com.""")
+parser=argparse.ArgumentParser(description='''Will nornalize (i.e. offset by PreTilt Zero angle) tilt angles in all mdocs in the input folder (input with -d with a slash at end) and generate a new folder called Adjusted containing new mdocs with normalized tilt angles. which can then be directly used in WARP & other software''', epilog="""For questions, contact at digvijay.in1 at gmail.com.""")
 
 requiredNamed = parser.add_argument_group('Required arguments')
 requiredNamed.add_argument('-d', '--mdoc_directory', help='Directory containing all mdocs whose tilt angles you want normalize', required=True)

@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# By Digvijay Singh (digvijay.in1@gmail.com)
+# By Digvijay Singh (digvijay.in1 at gmail.com)
 import sys
 import subprocess
 import getopt
 import argparse
 
 # THE MAIN SCRIPT STARTS from here
-parser=argparse.ArgumentParser(description='''Will batch reconstruct tomograms in Relion4 project based on the input of the tomograms.star file, input of the prefix of tomograms in your project and input of the range of tomograms to reconstructio. Pass only -h flag with no input for help''', epilog="""For questions, contact at digvijay.in1@gmail.com.""")
+parser=argparse.ArgumentParser(description='''Will batch reconstruct tomograms in Relion4 project based on the input of the tomograms.star file, input of the prefix of tomograms in your project and input of the range of tomograms to reconstructio. Pass only -h flag with no input for help''', epilog="""For questions, contact at digvijay.in1 at gmail.com.""")
 
 requiredNamed = parser.add_argument_group('Required arguments')
 requiredNamed.add_argument('-t', '--tomostar_name', help='Path to tomo star file', required=True)

@@ -2,7 +2,7 @@
 
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# By Digvijay Singh (digvijay.in1@gmail.com)
+# By Digvijay Singh (digvijay.in1 at gmail.com)
 import sys
 from glob import glob
 import glob, os
@@ -10,7 +10,7 @@ import getopt
 import argparse
 import shutil
 
-parser=argparse.ArgumentParser(description='''This program will batch AreTomo reconstruct tilt-series present inside each of the sub-directory in the WARP generated IMOD directory (input in -t with / at end). After batch reconstruction, the reconstruction parameters can be read by WARP like IMOD, because .xf files are generated. AreTomo parameters of reconstruction can be changed by changing parameters in the are_string below''', epilog="""For questions, contact at digvijay.in1@gmail.com.""")
+parser=argparse.ArgumentParser(description='''This program will batch AreTomo reconstruct tilt-series present inside each of the sub-directory in the WARP generated IMOD directory (input in -t with / at end). After batch reconstruction, the reconstruction parameters can be read by WARP like IMOD, because .xf files are generated. AreTomo parameters of reconstruction can be changed by changing parameters in the are_string below''', epilog="""For questions, contact at digvijay.in1 at gmail.com.""")
 
 requiredNamed = parser.add_argument_group('Required arguments')
 requiredNamed.add_argument('-t', '--warpImod_directory', help='WARP generated IMOD Directory containing sub-directories representing each of the tilt-series. This program will batch AreTomo reconstruct tilt-series present inside each of the sub-directory', required=True)

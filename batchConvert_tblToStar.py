@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# By Digvijay Singh (digvijay.in1@gmail.com)
+# By Digvijay Singh (digvijay.in1 at gmail.com)
 import sys
 from glob import glob
 import glob, os
 import getopt
 import argparse
 
-parser=argparse.ArgumentParser(description='''Will batch convert all Dynamo tbls in the input directory (input in -t with / at end) using Alister Burt's dynamo2m function, so dynamo2warp2 should be in your path''', epilog="""For questions, contact at digvijay.in1@gmail.com.""")
+parser=argparse.ArgumentParser(description='''Will batch convert all Dynamo tbls in the input directory (input in -t with / at end) using Alister Burt's dynamo2m function, so dynamo2warp2 should be in your path''', epilog="""For questions, contact at digvijay.in1 at gmail.com.""")
 
 requiredNamed = parser.add_argument_group('Required arguments')
 requiredNamed.add_argument('-t', '--tbl_directory', help='Directory containing tbl files you want converted into .star', required=True)
