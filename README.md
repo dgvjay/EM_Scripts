@@ -20,13 +20,13 @@ TomoSegmemTV is an excellent program for membrane segmentation in tomograms. It 
 ## batchAreTomo_reconstruction.py
 This script will batch AreTomo reconstruct tilt-series present inside each of the sub-directory in the WARP generated IMOD directory (input in -t with / at end). After batch reconstruction, the reconstruction parameters can be read by WARP like IMOD, because .xf files are generated. AreTomo parameters of reconstruction can be changed by changing parameters in the are_string below
 
-## batchConvert_json_to_tbls.py
+## batchConvert_jsonToTbl.py
 I really like EMAN2's e2spt_boxer for particle picking. This program ill batch read all EMAN2's json file (they should have boxes_3d in them) in the input directory (-d with \ end) and read the coordinates from it and convert it into Dynamo's .tbl. This dynamo style .tbl can be converted into .star using Alister Burt's dynamo2m. A wrapper for batch converting tbls to starfile is also present in this repository. Please batchConvert_tbls_to_stars.py
 
-## batchConvert_stars_to_tbls.py
+## batchConvert_starToTbl.py
 This script will batch convert all Relion3.0 star file in the input directory (input in -d with / at end) using Alister Burt's dynamo2m function, so warp2dynamo should be in your path
 
-## batchConvert_tbls_to_stars.py
+## batchConvert_tblToStar.py
 This script will batch convert all Dynamo tbls in the input directory (input in -t with / at end) using Alister Burt's dynamo2m function, so dynamo2warp2 should be in your path
 
 ## batchReconstruction_Relion4.py
