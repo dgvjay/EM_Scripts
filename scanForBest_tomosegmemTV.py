@@ -54,7 +54,7 @@ sum_slices=1
 annotate_images="yes"
 scale_nm=100
 
-parser=argparse.ArgumentParser(description='''Will take your tomogram and generate its tomosegmenTV segmented  slicer images across a range of input tomosegmemTV parameters. Choose the ones where the membrane segmentation is the best. Run as python scanForBest_tomosegmemTV.py -t tomo_name -a StartoftheRangeofTomosegmemTVParameters -d EndOftheRangeofTomosegmemTVParameters -n NumberofTomosegmemTVParametersbetweenTwoRanges. It needs the accompanying slicer_images.py script in the same folder ''', epilog="""For questions, contact at digvijay.in1 at gmail.com.""")
+parser=argparse.ArgumentParser(description='''Will take your tomogram and generate its tomosegmenTV segmented  slicer images across a range of input tomosegmemTV parameters. Choose the ones where the membrane segmentation is the best. Example: python scanForBest_tomosegmemTV.py -t tomo_name -a StartoftheRangeofTomosegmemTVParameters -d EndOftheRangeofTomosegmemTVParameters -n NumberofTomosegmemTVParametersbetweenTwoRanges. It needs the accompanying slicer_images.py script in the same folder ''', epilog="""For questions, contact at digvijay.in1 at gmail.com.""")
 
 requiredNamed = parser.add_argument_group('Required arguments')
 requiredNamed.add_argument('-t', '--tomo_name', help='Tomogram File (which should have .rec extension), but here pass the name without .rec extension', required=True)

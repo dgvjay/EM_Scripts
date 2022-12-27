@@ -12,7 +12,7 @@ import sys
 
 
 # THE MAIN SCRIPT STARTS from here
-parser=argparse.ArgumentParser(description='''Will parse all the mdoc file present in the input directory (input with -d with \ at end) and generate plots summarizing various attributes of the mdoc files''', epilog="""For questions, contact at digvijay.in1 at gmail.com.""")
+parser=argparse.ArgumentParser(description='''Will parse all the mdoc file present in the input directory (input with -d with \ at end) and generate plots summarizing various attributes of the mdoc files. Example: visualize_mdoc.py -d /data/mdocs/''', epilog="""For questions, contact at digvijay.in1 at gmail.com.""")
 
 requiredNamed = parser.add_argument_group('Required arguments')
 requiredNamed.add_argument('-d', '--mdoc_directory', help='Directory containing all mdocs whose you want parsed/visually summarized', required=True)

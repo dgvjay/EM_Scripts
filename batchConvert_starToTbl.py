@@ -9,7 +9,7 @@ import argparse
 
 
 # THE MAIN SCRIPT STARTS from here
-parser=argparse.ArgumentParser(description='''Will batch convert all Relion3.0 star file in the input directory (input in -d with / at end) using Alister Burt's dynamo2m function, so warp2dynamo should be in your path''', epilog="""For questions, contact at digvijay.in1 at gmail.com.""")
+parser=argparse.ArgumentParser(description='''Will batch convert all Relion3.0 star file in the input directory (input in -d with / at end) using Alister Burt's dynamo2m function, so warp2dynamo should be in your path. Example: batchConvert_starToTbl.py -b 56 -d /data/stars/''', epilog="""For questions, contact at digvijay.in1 at gmail.com.""")
 
 requiredNamed = parser.add_argument_group('Required arguments')
 requiredNamed.add_argument('-b', '--box_size', help='Box size in .tbl files', required=True)

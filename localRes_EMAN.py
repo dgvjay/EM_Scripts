@@ -7,7 +7,7 @@ import getopt
 import argparse
 import subprocess
 from EMAN2 import *
-parser=argparse.ArgumentParser(description='''Will calculate local resolution between two half maps using the input box size using EMAN2's e2fsc_real_local.py''', epilog="""For questions, contact at digvijay.in1 at gmail.com.""")
+parser=argparse.ArgumentParser(description='''Will calculate local resolution between two half maps using the input box size using EMAN2's e2fsc_real_local.py. Example: localRes_EMAN.py -o half1.mrc -e half2.mrc -l 10 -m mask.mrc''', epilog="""For questions, contact at digvijay.in1 at gmail.com.""")
 
 #Optional arguments
 #parser.add_argument('-o', '--output', help='Output file name', default='stdout')
@@ -15,7 +15,7 @@ requiredNamed = parser.add_argument_group('Required arguments')
 requiredNamed.add_argument('-o', '--odd_map', help='Path to odd_map file', required=True)
 requiredNamed.add_argument('-e', '--even_map', help='Path to even map file', required=True)
 requiredNamed.add_argument('-l', '--local_size', help='local size for local resolution (in Angstroms)', required=True)
-requiredNamed.add_argument('-m', '--mask', help='Mask', required=True)
+requiredNamed.add_argument('-m', '--mask', help='Locally filtered map from combining odd and even maps will be multiplied with this mask', required=True)
 args=parser.parse_args()
 
 opts, args = getopt.gnu_getopt(sys.argv[1:], 'o:e:l:m:',

@@ -6,7 +6,7 @@ import getopt
 import argparse
 
 
-parser=argparse.ArgumentParser(description='''Will batch read all EMAN2's json file (they should have boxes_3d in them) in the input directory (-d with \ end) and read the coordinates from it and convert it into Dynamo's .tbl (which can be converted into .star using Alister Burt's dynamo2m''', epilog="""For questions, contact at digvijay.in1 at gmail.com.""")
+parser=argparse.ArgumentParser(description='''Will batch read all EMAN2's json file (they should have boxes_3d in them) in the input directory (-d with \ end) and read the coordinates from it and convert it into Dynamo's .tbl (which can be converted into .star using Alister Burt's dynamo2m. Example: batchConvert_jsonToTbl.py -j /data/info/''', epilog="""For questions, contact at digvijay.in1 at gmail.com.""")
 
 requiredNamed = parser.add_argument_group('Required arguments')
 requiredNamed.add_argument('-j', '--json_directory', help='Directory containing info files you want converted into .tbls', required=True)

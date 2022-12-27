@@ -7,7 +7,7 @@ import glob, os
 import getopt
 import argparse
 
-parser=argparse.ArgumentParser(description='''Will batch convert all Dynamo tbls in the input directory (input in -t with / at end) using Alister Burt's dynamo2m function, so dynamo2warp2 should be in your path''', epilog="""For questions, contact at digvijay.in1 at gmail.com.""")
+parser=argparse.ArgumentParser(description='''Will batch convert all Dynamo tbls in the input directory (input in -t with / at end) using Alister Burt's dynamo2m function, so dynamo2warp2 should be in your path. Example: batchConvert_tblToStar.py -t /data/tbls/''', epilog="""For questions, contact at digvijay.in1 at gmail.com.""")
 
 requiredNamed = parser.add_argument_group('Required arguments')
 requiredNamed.add_argument('-t', '--tbl_directory', help='Directory containing tbl files you want converted into .star', required=True)

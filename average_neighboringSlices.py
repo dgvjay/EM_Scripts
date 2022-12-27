@@ -30,7 +30,7 @@ def make_stack(tomo_name,slices_sum):
   os.remove(tomo_name[0:-4]+"_Averaged.mrc~")
  
 # THE MAIN SCRIPT STARTS from here
-parser=argparse.ArgumentParser(description='''Will take a tomogram as input and generate a new one where every slice is an average of the n (also input) slices. Pass only -h flag with no input for help''', epilog="""For questions, contact at digvijay.in1 at gmail.com.""")
+parser=argparse.ArgumentParser(description='''Will take a tomogram as input and generate a new one where every slice is an average of the n (also input) slices. Pass only -h flag with no input for help. Example: average_neighboringSlices.py -t Tomo.mrc -s 10''', epilog="""For questions, contact at digvijay.in1 at gmail.com.""")
 
 requiredNamed = parser.add_argument_group('Required arguments')
 requiredNamed.add_argument('-t', '--tomo_name', help='Path to tomogram file', required=True)
