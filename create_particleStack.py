@@ -26,5 +26,5 @@ image_files=all_data['rlnImageName']
 image_files=image_files.values.tolist()
 
 for item in image_files:
- EMANCommand="module load eman2/2.91; e2proc3d.py "+item+" "+star_file[0:-4]+"hdf --append"
- subprocess.call(['/bin/csh', '-c', EMANCommand])
+ eman_command="module load eman2/2.91; e2proc3d.py "+item+" "+star_file[0:-4]+"hdf --append"
+ subprocess.call(['/bin/csh', '-c', eman_command])
